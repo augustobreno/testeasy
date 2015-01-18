@@ -1,4 +1,4 @@
-package org.easy.testeasy.jpa;
+package org.easy.testeasy;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

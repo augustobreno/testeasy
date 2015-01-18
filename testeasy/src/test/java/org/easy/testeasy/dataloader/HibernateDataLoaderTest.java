@@ -2,8 +2,8 @@ package org.easy.testeasy.dataloader;
 
 import javax.inject.Inject;
 
+import org.easy.testeasy.LocalTransactionTestBase;
 import org.easy.testeasy.dataloader.HibernateDataLoader;
-import org.easy.testeasy.jpa.TransactionTestBase;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author augusto
  *
  */
-public class HibernateDataLoaderTest extends TransactionTestBase {
+public class HibernateDataLoaderTest extends LocalTransactionTestBase {
 
 	@Inject
 	private UF_aa_DataLoader ufDataLoader;

@@ -1,9 +1,9 @@
 package org.easy.testeasy.dataloader;
 
+import org.easy.testeasy.LocalTransactionTestBase;
 import org.easy.testeasy.dataloader.DataLoader;
 import org.easy.testeasy.dataloader.LoadData;
 import org.easy.testeasy.domain.UF;
-import org.easy.testeasy.jpa.TransactionTestBase;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ import org.junit.Test;
  *
  */
 @LoadData(dataLoader=UF_aa_DataLoader.class)
-public class LoadDataBeanTest extends TransactionTestBase {
+public class LoadDataBeanTest extends LocalTransactionTestBase {
 
 	/**
 	 * Verifica o funcionamento da anotação sobre a classe.

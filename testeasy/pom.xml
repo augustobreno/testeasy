@@ -64,8 +64,8 @@
 			<version>4.10</version>
 		</dependency>
 
-		<!-- ao migrar para weld-se 2.2.X os testes não passaram mais.
-		 manter esta versão por enquanto -->
+		<!-- ao migrar para weld-se 2.2.X os testes não passaram mais. manter esta 
+			versão por enquanto -->
 		<dependency>
 			<groupId>org.jboss.weld.se</groupId>
 			<artifactId>weld-se</artifactId>
@@ -101,6 +101,18 @@
 			<artifactId>arquillian-junit-container</artifactId>
 			<version>1.1.5.final</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.arquillian.extension</groupId>
+			<artifactId>arquillian-transaction-jta</artifactId>
+			<version>1.0.1.Final</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eu.ingwar.tools</groupId>
+			<artifactId>arquillian-suite-extension</artifactId>
+			<version>1.1.2</version>
+		</dependency>		
 
 		<!-- banco de dados para teste -->
 		<dependency>

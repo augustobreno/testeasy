@@ -1,4 +1,4 @@
-package org.easy.testeasy.jpa;
+package org.easy.testeasy;
 
 import static org.junit.Assert.fail;
 
@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+import org.easy.testeasy.jpa.JPAStandalone;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -21,7 +22,7 @@ import org.junit.Ignore;
  * 
  */
 @Ignore
-public class TransactionTestBase extends TestBase {
+public class LocalTransactionTestBase extends TestBase {
 
 	/** para controle de transações e acesso à base de dados */
 	private JPAStandalone jpaInstance;

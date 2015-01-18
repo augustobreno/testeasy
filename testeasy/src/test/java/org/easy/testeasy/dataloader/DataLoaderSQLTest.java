@@ -2,8 +2,8 @@ package org.easy.testeasy.dataloader;
 
 import javax.inject.Inject;
 
+import org.easy.testeasy.LocalTransactionTestBase;
 import org.easy.testeasy.dataloader.DataLoaderSQL;
-import org.easy.testeasy.jpa.TransactionTestBase;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
  * Testes da classe {@link DataLoaderSQL}
  * @author augusto
  */
-public class DataLoaderSQLTest extends TransactionTestBase {
+public class DataLoaderSQLTest extends LocalTransactionTestBase {
 
 	@Inject
 	private DataLoaderSQL loaderSQL;
