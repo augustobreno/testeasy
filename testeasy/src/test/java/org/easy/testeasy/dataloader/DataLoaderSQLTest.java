@@ -3,19 +3,19 @@ package org.easy.testeasy.dataloader;
 import javax.inject.Inject;
 
 import org.easy.testeasy.LocalTransactionTestBase;
-import org.easy.testeasy.dataloader.DataLoaderSQL;
+import org.easy.testeasy.dataloader.SqlDataLoader;
 import org.junit.Assert;
 import org.junit.Test;
 
 
 /**
- * Testes da classe {@link DataLoaderSQL}
+ * Testes da classe {@link SqlDataLoader}
  * @author augusto
  */
 public class DataLoaderSQLTest extends LocalTransactionTestBase {
 
 	@Inject
-	private DataLoaderSQL loaderSQL;
+	private SqlDataLoader loaderSQL;
 	
 	/**
 	 * Tenta executar um script existente na raiz do projeto, considerando seu caminho relativo.

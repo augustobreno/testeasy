@@ -16,7 +16,7 @@ public class CDITest {
 	 */
 	@Test
 	public void simpleLookupTest() {
-		EmptyBeanA emptyBeanA = CDI.getInstance().lookup(EmptyBeanA.class);
+		EmptyBeanA emptyBeanA = CDI.lookup(EmptyBeanA.class);
 		Assert.assertNotNull(emptyBeanA);
 	}
 	
@@ -31,7 +31,7 @@ public class CDITest {
 		 */
 		
 		@SuppressWarnings("serial")
-		EmptyBean emptyBean = CDI.getInstance().lookup(EmptyBean.class,  new AnnotationLiteral<QualifierB>() {});
+		EmptyBean emptyBean = CDI.lookup(EmptyBean.class,  new AnnotationLiteral<QualifierB>() {});
 		Assert.assertNotNull(emptyBean);
 		Assert.assertTrue(EmptyBeanB.class.equals(emptyBean.getClass()));;
 	}

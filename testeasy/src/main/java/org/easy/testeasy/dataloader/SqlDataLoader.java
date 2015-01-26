@@ -20,7 +20,7 @@ import org.hibernate.jdbc.Work;
  * @author augusto
  *
  */
-public class DataLoaderSQL extends HibernateDataLoader {
+public class SqlDataLoader extends HibernateDataLoader {
 
 	/** Caminho para o diretório src/test/resources*/
 	public static final String TEST_RESOURCES_PATH = "src" + File.separator + "test" + File.separator + "resources"; 
@@ -28,14 +28,14 @@ public class DataLoaderSQL extends HibernateDataLoader {
 	/** Caminho para o Script SQL para execução */
 	private String scriptPath;
 
-	public DataLoaderSQL() {
+	public SqlDataLoader() {
 		// Default
 	}
 	
 	/**
 	 * @param scriptPath Caminho para o Script SQL para execução.
 	 */
-	public DataLoaderSQL(String scriptPath) {
+	public SqlDataLoader(String scriptPath) {
 		super();
 		this.scriptPath = scriptPath;
 	}

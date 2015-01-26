@@ -39,20 +39,20 @@ public abstract class TestBase {
 	 * Verifica se ambas as listas possuem os mesmos objetos. A ordem não é
 	 * verificada.
 	 */
-	public void assertContentEqual(List<?> list1, List<?> list2) {
-		assertTrue("A primeira lista não contem todos os objetos da segunda lista",
-				list1.containsAll(list2));
-		assertTrue("A segunda lista não contem todos os objetos da primeira lista",
-				list2.containsAll(list1));
+	public void assertContentEqual(List<?> esperado, List<?> encontrado) {
+		assertTrue("A lista esperada não contem todos os objetos da lista encontrada",
+				esperado.containsAll(encontrado));
+		assertTrue("A lista encontrada não contem todos os objetos da lista esperada",
+				encontrado.containsAll(esperado));
 	}
 
 	/**
 	 * Verifica se ambas as listas não possuem os mesmos objetos. A ordem não é
 	 * verificada.
 	 */
-	public void assertContentNotEqual(List<?> list1, List<?> list2) {
-		boolean hqlContemQBE = list1.containsAll(list2);
-		boolean qbeContemHQL = list2.containsAll(list1);
+	public void assertContentNotEqual(List<?> esperado, List<?> encontrado) {
+		boolean hqlContemQBE = esperado.containsAll(encontrado);
+		boolean qbeContemHQL = encontrado.containsAll(esperado);
 		assertFalse("As listas deveriam conter dados equivalentes.",
 				hqlContemQBE && qbeContemHQL);
 	}
