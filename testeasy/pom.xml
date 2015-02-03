@@ -99,7 +99,7 @@
 		<dependency>
 			<groupId>org.jboss.arquillian.junit</groupId>
 			<artifactId>arquillian-junit-container</artifactId>
-			<version>1.1.5.final</version>
+			<version>1.1.6.final</version>
 		</dependency>
 
 		<dependency>
