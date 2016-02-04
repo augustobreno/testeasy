@@ -3,7 +3,7 @@ package org.easy.testeasy;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import org.jboss.arquillian.junit.Arquillian;
+//import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
 import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.junit.runner.RunWith;
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
  * @author Augusto
  *
  */
-@RunWith(Arquillian.class)
+//@RunWith(Arquillian.class)
 @Transactional(value=TransactionMode.ROLLBACK)
 public class DeployableBaseTest extends TestBase {
 
